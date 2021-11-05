@@ -1,0 +1,7 @@
+{
+  "name": "Programacion",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
