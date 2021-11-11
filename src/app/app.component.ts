@@ -6,13 +6,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Tipo de Datos', url: '/tipo-de-datos', icon: 'videocam' },
+    {
+      title: 'Variables, Constantes y Valores',
+      url: '/variables',
+      icon: 'videocam',
+    },
+    { title: 'Operadores', url: '/operadores', icon: 'videocam' },
+    { title: 'Condicionales', url: '/condicionales', icon: 'videocam' },
+    { title: 'Bucles', url: '/clase-cinco', icon: 'videocam' },
+    { title: 'Arrays / Vectores', url: '/clase-seis', icon: 'videocam' },
+    { title: 'Funciones / Métodos', url: '/clase-siete', icon: 'videocam' },
+    { title: 'Clases y Objetos', url: '/clase-ocho', icon: 'videocam' },
+    { title: 'Namespace', url: '/clase-nueve', icon: 'videocam' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+  public labels = [];
+  constructor() {
+    setTimeout(() => {
+      console.clear();
+      //aquí debajo escribir
+    }, 300);
+  }
 }

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Variables, Constantes y Valores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let bloque of bloques" [color]="bloque.color">
+    <ion-card-header>
+      <ion-card-title>{{bloque.title}}</ion-card-title>
+      <ion-card-subtitle>{{bloque.subtitle}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content> {{bloque.descrip}} </ion-card-content>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Ejemplos</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <b>var</b> mi_nombre: string = "Ignacio"; <br />
+      <b>var</b> cualquier_cosa: any = "Ignacio"; <br />
+      <b>let</b> edad: number = 31; <br />
+      <b>const</b> PESO_MAX: number = 50;
+    </ion-card-content>
+  </ion-card>
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>También podemos declararlas así:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <b>var</b> mi_nombre = "Ignacio"; <br />
+      <b>let</b> edad = 31; <br />
+      <b>const</b> PESO_MAX = 50;
+
+      <h4>
+        En este caso el lenguaje va a definir el tipo de dato segun el valor que
+        almacenamos inicialmente y, según el lenguaje en el que estemos, no nos
+        dejará cambiar su valor por un tipo de dato diferente. Por ejemplo: no
+        nos va a dejar guardar un número en <b>mi_nombre</b>. Aún así, hay
+        lenguajes que sí o sí te piden definir el tipo de dato antes de asignar
+        un valor.
+      </h4>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

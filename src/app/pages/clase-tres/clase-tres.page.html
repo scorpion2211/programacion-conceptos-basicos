@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Namesapce</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="center">
+      <ion-col>
+        <h2>Operadores Aritméticos</h2>
+
+        <ion-card *ngFor="let bloque of artimeticos" [color]="bloque.color">
+          <ion-card-header>
+            <ion-card-title>{{bloque.title}}</ion-card-title>
+            <ion-card-subtitle><b>{{bloque.subtitle}}</b></ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>{{bloque.descrip}}</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <h2>Operadores Lógicos</h2>
+        <ion-card *ngFor="let bloque of logicos" [color]="bloque.color">
+          <ion-card-header>
+            <ion-card-title>{{bloque.title}}</ion-card-title>
+            <ion-card-subtitle><b>{{bloque.subtitle}}</b></ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content [innerHtml]="bloque.descrip">
+          </ion-card-content> </ion-card
+      ></ion-col>
+      <ion-col>
+        <h2>Operadores Comparativos</h2>
+        <ion-card *ngFor="let bloque of comparativos" [color]="bloque.color">
+          <ion-card-header>
+            <ion-card-title>{{bloque.title}}</ion-card-title>
+            <ion-card-subtitle><b>{{bloque.subtitle}}</b></ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content> {{bloque.descrip}} </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
